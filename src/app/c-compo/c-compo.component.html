@@ -1,0 +1,23 @@
+<h3>string interpolation</h3>
+<p>{{ "Hello" }} I'm {{ name }} and i am a {{ aim }}</p>
+<p>{{ "Hello" }} I'm {{ name }} and i am a {{ whataim() }}</p>
+
+<br />
+
+<h3>property binding</h3>
+<button [disabled]="!changebehaviour">property</button>
+
+<br />
+<br />
+
+<h3>event binding</h3>
+<button (click)="onlcickbehaviour()">event</button>
+<p>{{ tapbehaviour }}</p>
+<input type="text" (input)="updatewhentype($event)" />
+<p>{{ insideinputbox }}</p>
+
+<h3>using both property and event</h3>
+<button [disabled]="!changebehaviour" (click)="onlcickbehaviour()">
+  wait and click
+</button>
+<p>{{ tapbehaviour }}</p>
